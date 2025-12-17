@@ -17,9 +17,9 @@ Minecraft mod: Bushier, stackable vanilla flowers.
 ## 🪓 Tools Interaction (Re-shape Your Flowers)
 
 Reimagine how you interact with flowers using tools:
+- Shovel removes 1 flower from the stack
 - Shears make your flower stack shorter
 - Hoe sets a new direction for your flowers
-- Shovel removes one flower from the stack
 
 ## 🌿 Bonemeal Growth (with Control)
 
