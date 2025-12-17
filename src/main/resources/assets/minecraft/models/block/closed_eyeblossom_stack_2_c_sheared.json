@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/lunas_flower_patch_cross_2_c_sheared",
+  "textures": {
+    "particle": "minecraft:block/closed_eyeblossom",
+    "cross": "minecraft:block/closed_eyeblossom_sheared"
+  }
+}

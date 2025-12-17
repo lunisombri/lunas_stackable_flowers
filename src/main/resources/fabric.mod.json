@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "lunas-stackable-flowers",
+	"version": "${version}",
+	"name": "Luna´s Stackable Flowers",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lunas-stackable-flowers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lunas.stackable.flowers.LunasStackableFlowers"
+		],
+		"client": [
+			"lunas.stackable.flowers.LunasStackableFlowersClient"
+		]
+	},
+	"mixins": [
+		"lunas-stackable-flowers.mixins.json",
+		{
+			"config": "lunas-stackable-flowers.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

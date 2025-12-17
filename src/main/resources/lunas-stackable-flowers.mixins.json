@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "lunas.stackable.flowers.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockCreateStateDefinitionMixin",
+    "BlockItemMixin",
+    "BlockMixin",
+    "BlockStateBaseMixin",
+    "EyeblossomBlockMixin",
+    "FlowerBlockMixin",
+    "HoeItemMixin",
+    "ShearsItemMixin",
+    "ShovelItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}
