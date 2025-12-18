@@ -32,19 +32,20 @@ public class ShearsItemMixin {
             return;
         }
 
-        if (stackableFlower.isSheared(blockState)) {
-            cir.setReturnValue(InteractionResult.PASS);
-            cir.cancel();
-        }
-
-        Player player = useOnContext.getPlayer();
-        ItemStack itemStack = useOnContext.getItemInHand();
-
         if (level.isClientSide()) {
             cir.setReturnValue(InteractionResult.SUCCESS);
             cir.cancel();
             return;
         }
+
+        if (stackableFlower.isSheared(blockState)) {
+            cir.setReturnValue(InteractionResult.PASS);
+            cir.cancel();
+            return;
+        }
+
+        Player player = useOnContext.getPlayer();
+        ItemStack itemStack = useOnContext.getItemInHand();
 
         BlockState next = stackableFlower.toggleIsSheared(blockState);
         level.setBlock(blockPos, next, 3);
