@@ -23,7 +23,6 @@ public interface StackableFlower {
             "block.minecraft.torchflower"
     );
 
-    VoxelShape LUNAS_SINGLE = Block.box(5.0, 0.0, 5.0, 11.0, 10.0, 11.0);
     VoxelShape LUNAS_STACKED = Block.box(2.0, 0.0, 2.0, 14.0, 5.0, 14.0);
 
     IntegerProperty LUNAS_FLOWER_STACKS = IntegerProperty.create("lunas_flower_stacks_prop", MIN_STACKS, MAX_STACKS);
@@ -62,8 +61,8 @@ public interface StackableFlower {
         return blockState;
     }
 
-    default VoxelShape getStackShape(BlockState blockState) {
-        return hasStacks(blockState) ? LUNAS_STACKED : LUNAS_SINGLE;
+    default VoxelShape getStackShape() {
+        return LUNAS_STACKED;
     }
 
     default boolean isSheared(BlockState blockState) {

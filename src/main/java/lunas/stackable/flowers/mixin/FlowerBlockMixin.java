@@ -28,11 +28,15 @@ public class FlowerBlockMixin implements StackableFlower, BonemealableBlock {
             CollisionContext context,
             CallbackInfoReturnable<VoxelShape> cir
     ) {
-        if (!(blockState.getBlock() instanceof StackableFlower)) {
+        if (!(blockState.getBlock() instanceof StackableFlower stackableFlower)) {
             return;
         }
 
-        cir.setReturnValue(getStackShape(blockState));
+        if (!stackableFlower.hasStacks(blockState)) {
+            return;
+        }
+
+        cir.setReturnValue(getStackShape());
         cir.cancel();
     }
 
