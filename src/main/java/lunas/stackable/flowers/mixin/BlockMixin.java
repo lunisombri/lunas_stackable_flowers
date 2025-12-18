@@ -1,7 +1,6 @@
 package lunas.stackable.flowers.mixin;
 
 import lunas.stackable.flowers.blocks.StackableFlower;
-import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
