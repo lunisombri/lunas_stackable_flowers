@@ -37,6 +37,14 @@ Designed to feel like it could have shipped with Minecraft:
 - Fully compatible with existing worlds
 - No changes to your world generation
 
+## 🧩 Compatibility
+
+| Minecraft Version | Status         |
+|-------------------|----------------|
+| **1.21.11**       | 🛠 In Progress   |
+| **1.20.10**       | ✅ Supported    |
+| Older versions    | ❌ Not supported |
+
 # 💚 Credits
 
 Created with care using Fabric, Blockbench and a deep love for Minecraft.
