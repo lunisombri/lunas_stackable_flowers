@@ -61,8 +61,8 @@ public abstract class BlockItemMixin {
         BlockState next;
         if (!stackableFlower.hasStacks(existing)) {
             Direction facing = blockPlaceContext.getHorizontalDirection();
-            next = stackableFlower.increaseStack(existing)
-                    .setValue(StackableFlower.LUNAS_FACING, facing);
+            next = stackableFlower.increaseStack(existing);
+            next = stackableFlower.updateDirection(next, facing);
         } else {
             next = stackableFlower.increaseStack(existing);
         }

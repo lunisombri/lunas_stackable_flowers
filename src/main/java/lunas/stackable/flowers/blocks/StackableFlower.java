@@ -53,7 +53,14 @@ public interface StackableFlower {
         return blockState;
     }
 
-    BlockState decreaseStack(BlockState blockState, Level serverLevel, BlockPos blockPos);
+    default BlockState decreaseStack(BlockState blockState, Level serverLevel, BlockPos blockPos) {
+        int currentStacks = blockState.getValue(LUNAS_FLOWER_STACKS);
+        if (currentStacks > MIN_STACKS) {
+            blockState = blockState.setValue(LUNAS_FLOWER_STACKS, currentStacks - 1);
+        }
+        Block.popResource(serverLevel, blockPos, new ItemStack((ItemLike) this));
+        return blockState;
+    }
 
     default VoxelShape getStackShape(BlockState blockState) {
         return hasStacks(blockState) ? LUNAS_STACKED : LUNAS_SINGLE;
@@ -63,6 +70,11 @@ public interface StackableFlower {
         return blockState.getValue(LUNAS_IS_SHEARED);
     }
 
+    default BlockState toggleIsSheared(BlockState blockState) {
+        boolean current = blockState.getValue(LUNAS_IS_SHEARED);
+        return blockState.setValue(LUNAS_IS_SHEARED, !current);
+    }
+
     default boolean isBonemealed(BlockState blockState) {
         return blockState.getValue(LUNAS_IS_BONEMEALED);
     }
@@ -70,5 +82,22 @@ public interface StackableFlower {
     default BlockState toggleIsBonemealed(BlockState blockState) {
         boolean current = blockState.getValue(LUNAS_IS_BONEMEALED);
         return blockState.setValue(LUNAS_IS_BONEMEALED, !current);
+    }
+
+    default BlockState updateDirection(BlockState blockState, Direction direction) {
+        return blockState.setValue(LUNAS_FACING, direction);
+    }
+
+    static BlockState defaultBlockState(BlockState to) {
+        return to.setValue(StackableFlower.LUNAS_FACING, Direction.NORTH)
+                .setValue(StackableFlower.LUNAS_IS_BONEMEALED, false)
+                .setValue(StackableFlower.LUNAS_IS_SHEARED, false);
+    }
+
+    static BlockState cloneBlockState(BlockState from, BlockState to) {
+        return to.setValue(StackableFlower.LUNAS_FLOWER_STACKS, from.getValue(StackableFlower.LUNAS_FLOWER_STACKS))
+                .setValue(StackableFlower.LUNAS_FACING, from.getValue(StackableFlower.LUNAS_FACING))
+                .setValue(StackableFlower.LUNAS_IS_BONEMEALED, from.getValue(StackableFlower.LUNAS_IS_BONEMEALED))
+                .setValue(StackableFlower.LUNAS_IS_SHEARED, from.getValue(StackableFlower.LUNAS_IS_SHEARED));
     }
 }

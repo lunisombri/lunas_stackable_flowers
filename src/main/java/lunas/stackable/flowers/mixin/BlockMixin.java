@@ -21,8 +21,6 @@ public abstract class BlockMixin {
             return blockState;
         }
 
-        return blockState.setValue(StackableFlower.LUNAS_FACING, Direction.NORTH)
-                .setValue(StackableFlower.LUNAS_IS_BONEMEALED, false)
-                .setValue(StackableFlower.LUNAS_IS_SHEARED, false);
+        return StackableFlower.defaultBlockState(blockState);
     }
 }

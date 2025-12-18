@@ -23,10 +23,6 @@ public abstract class BlockStateBaseMixin {
             return;
         }
 
-        if (!state.hasProperty(StackableFlower.LUNAS_FLOWER_STACKS)) {
-            return;
-        }
-
         if (stackableFlower.hasStacks(state)) {
             cir.setReturnValue(Vec3.ZERO);
             cir.cancel();

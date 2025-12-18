@@ -33,7 +33,7 @@ public class ShearsItemMixin {
         }
 
         if (stackableFlower.isSheared(blockState)) {
-            cir.setReturnValue(InteractionResult.SUCCESS);
+            cir.setReturnValue(InteractionResult.PASS);
             cir.cancel();
         }
 
@@ -46,7 +46,7 @@ public class ShearsItemMixin {
             return;
         }
 
-        BlockState next = blockState.setValue(StackableFlower.LUNAS_IS_SHEARED, true);
+        BlockState next = stackableFlower.toggleIsSheared(blockState);
         level.setBlock(blockPos, next, 3);
 
         level.playSound(null, blockPos, SoundEvents.GROWING_PLANT_CROP, SoundSource.BLOCKS, 1.0F, 1.0F);

@@ -53,7 +53,7 @@ public class FlowerBlockMixin implements StackableFlower, BonemealableBlock {
     public void performBonemeal(ServerLevel serverLevel, RandomSource randomSource, BlockPos blockPos, BlockState blockState) {
         BlockState newState = blockState;
         if (isSheared(blockState)) {
-            serverLevel.setBlock(blockPos, newState.setValue(LUNAS_IS_SHEARED, false), 2);
+            serverLevel.setBlock(blockPos, this.toggleIsSheared(blockState), 2);
             return;
         }
 
@@ -66,14 +66,5 @@ public class FlowerBlockMixin implements StackableFlower, BonemealableBlock {
         }
 
         serverLevel.setBlock(blockPos, newState, 2);
-    }
-
-    public BlockState decreaseStack(BlockState blockState, Level serverLevel, BlockPos blockPos) {
-        int currentStacks = blockState.getValue(LUNAS_FLOWER_STACKS);
-        if (currentStacks > MIN_STACKS) {
-            blockState = blockState.setValue(LUNAS_FLOWER_STACKS, currentStacks - 1);
-        }
-        Block.popResource(serverLevel, blockPos, new ItemStack((ItemLike) this));
-        return blockState;
     }
 }

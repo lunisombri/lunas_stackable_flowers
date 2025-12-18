@@ -43,7 +43,7 @@ public class HoeItemMixin {
         }
 
         Direction facing = useOnContext.getHorizontalDirection();
-        BlockState next = state.setValue(StackableFlower.LUNAS_FACING, facing);
+        BlockState next = stackableFlower.updateDirection(state, facing);
 
         level.setBlock(pos, next, 3);
 

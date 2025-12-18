@@ -27,15 +27,7 @@ public class EyeblossomBlockMixin {
             @Local(argsOnly = true) BlockState oldState
     ) {
         if (oldState.getBlock() instanceof StackableFlower) {
-            newState = newState
-                    .setValue(StackableFlower.LUNAS_FLOWER_STACKS,
-                            oldState.getValue(StackableFlower.LUNAS_FLOWER_STACKS))
-                    .setValue(StackableFlower.LUNAS_FACING,
-                            oldState.getValue(StackableFlower.LUNAS_FACING))
-                    .setValue(StackableFlower.LUNAS_IS_BONEMEALED,
-                            oldState.getValue(StackableFlower.LUNAS_IS_BONEMEALED))
-                    .setValue(StackableFlower.LUNAS_IS_SHEARED,
-                            oldState.getValue(StackableFlower.LUNAS_IS_SHEARED));;
+            newState = StackableFlower.cloneBlockState(oldState ,newState);
         }
 
         return level.setBlock(pos, newState, flags);
