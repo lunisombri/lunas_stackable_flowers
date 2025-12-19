@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "particle": "minecraft:block/pink_tulip",
+    "cross": "minecraft:block/pink_tulip_sheared"
+  }
+}

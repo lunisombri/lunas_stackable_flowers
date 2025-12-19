@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/lunas_flower_patch_cross_2_c",
+  "textures": {
+    "particle": "minecraft:block/torchflower",
+    "cross": "minecraft:block/torchflower_sheared"
+  }
+}

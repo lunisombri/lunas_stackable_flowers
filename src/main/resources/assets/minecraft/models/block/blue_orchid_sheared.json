@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "particle": "minecraft:block/blue_orchid",
+    "cross": "minecraft:block/blue_orchid_sheared"
+  }
+}

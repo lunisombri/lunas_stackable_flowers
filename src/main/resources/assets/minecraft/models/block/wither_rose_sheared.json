@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "particle": "minecraft:block/wither_rose",
+    "cross": "minecraft:block/wither_rose_sheared"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "particle": "minecraft:block/torchflower",
+    "cross": "minecraft:block/torchflower_sheared"
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "1",
+        "lunas_is_sheared": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "1",
+        "lunas_is_sheared": "true"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_2_a" },
+        { "model": "minecraft:block/azure_bluet_stack_2_b" },
+        { "model": "minecraft:block/azure_bluet_stack_2_c" },
+        { "model": "minecraft:block/azure_bluet_stack_2_d" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "false"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_2_a_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_2_b_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_2_c_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_2_d_sheared" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "true"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_3_a" },
+        { "model": "minecraft:block/azure_bluet_stack_3_b" },
+        { "model": "minecraft:block/azure_bluet_stack_3_c" },
+        { "model": "minecraft:block/azure_bluet_stack_3_d" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "false"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_3_a_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_3_b_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_3_c_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_3_d_sheared" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "true"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_4_a" },
+        { "model": "minecraft:block/azure_bluet_stack_4_b" },
+        { "model": "minecraft:block/azure_bluet_stack_4_c" },
+        { "model": "minecraft:block/azure_bluet_stack_4_d" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "false"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_4_a_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_4_b_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_4_c_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_4_d_sheared" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "true"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_5_a" },
+        { "model": "minecraft:block/azure_bluet_stack_5_b" },
+        { "model": "minecraft:block/azure_bluet_stack_5_c" },
+        { "model": "minecraft:block/azure_bluet_stack_5_d" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "false"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_5_a_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_5_b_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_5_c_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_5_d_sheared" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "true"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_6_a" },
+        { "model": "minecraft:block/azure_bluet_stack_6_b" },
+        { "model": "minecraft:block/azure_bluet_stack_6_c" },
+        { "model": "minecraft:block/azure_bluet_stack_6_d" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "false"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/azure_bluet_stack_6_a_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_6_b_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_6_c_sheared" },
+        { "model": "minecraft:block/azure_bluet_stack_6_d_sheared" }
+      ],
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "true",
+        "lunas_is_sheared": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_north"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_west"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_south"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_east"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_north_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_west_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_south_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_2_east_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "2",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_north"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_west"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_south"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_east"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_north_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_west_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_south_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_3_east_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "3",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_north"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_west"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_south"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_east"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_north_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_west_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_south_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_4_east_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "4",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_north"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_west"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_south"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_east"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_north_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_west_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_south_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_5_east_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "5",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_north"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_west"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_south"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_east"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "false",
+        "lunas_facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_north_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_west_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_south_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/azure_bluet_stack_6_east_sheared"
+      },
+      "when": {
+        "lunas_flower_stacks_prop": "6",
+        "lunas_is_bonemealed": "false",
+        "lunas_is_sheared": "true",
+        "lunas_facing": "east"
+      }
+    }
+  ]
+}

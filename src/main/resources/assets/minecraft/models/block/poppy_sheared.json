@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "particle": "minecraft:block/poppy",
+    "cross": "minecraft:block/poppy_sheared"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "particle": "minecraft:block/closed_eyeblossom",
+    "cross": "minecraft:block/closed_eyeblossom_sheared"
+  }
+}

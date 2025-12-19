@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "particle": "minecraft:block/dandelion",
+    "cross": "minecraft:block/dandelion_sheared"
+  }
+}
