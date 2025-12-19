@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/lunas_flower_patch_cross_emissive_4_b",
-  "textures": {
-    "particle": "minecraft:block/open_eyeblossom",
-    "cross": "minecraft:block/open_eyeblossom",
-    "cross_emissive": "minecraft:block/open_eyeblossom_emissive"
-  }
-}

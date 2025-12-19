@@ -22,6 +22,12 @@ for flower in FLOWERS:
         text = text.replace("lunas_flower_patch_cross_", "lunas_flower_patch_cross_emissive_")
         text = text.replace("placeholder_flower_name", flower)
 
+        emissive_suffix = (
+            f"{flower}_emissive_sheared"
+            if "sheared" in src_file.name
+            else f"{flower}_emissive"
+        )
+
         def add_emissive_texture(match):
             block = match.group(0)
             m = re.search(r'(^\s*)"cross"\s*:\s*"[^"]+"', block, flags=re.MULTILINE)
@@ -29,7 +35,10 @@ for flower in FLOWERS:
                 indent = m.group(1)
                 block = re.sub(
                     r'("cross"\s*:\s*"[^"]+")',
-                    r'\1,\n{}"cross_emissive": "minecraft:block/{}_emissive"'.format(indent, flower),
+                    r'\1,\n{}"cross_emissive": "minecraft:block/{}"'.format(
+                        indent,
+                        emissive_suffix
+                    ),
                     block
                 )
             return block

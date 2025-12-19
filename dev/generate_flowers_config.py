@@ -5,6 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 DIR_A_PREFIX = BASE_DIR / "placeholders/resources"
 DIR_B_PREFIX = Path("src/main/resources")
+
 PLACEHOLDER = "placeholder_flower_name"
 
 FLOWERS = [
@@ -22,7 +23,7 @@ FLOWERS = [
     "lily_of_the_valley",
     "wither_rose",
     "torchflower",
-    "open_eyeblossom",
+    "closed_eyeblossom",
 ]
 
 DIR_B_PREFIX.mkdir(parents=True, exist_ok=True)
