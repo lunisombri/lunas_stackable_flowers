@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/lunas_flower_patch_cross_3_south",
-  "textures": {
-    "particle": "minecraft:block/cornflower",
-    "cross": "minecraft:block/cornflower_sheared"
-  }
-}

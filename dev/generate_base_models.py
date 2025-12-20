@@ -7,9 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent
 MODELS_DIR = BASE_DIR / "models"
 TMP_DIR = MODELS_DIR / "tmp"
 
-# DST_DIR = Path("src/main/resources/assets/minecraft/models/block")
-DST_DIR = Path("test")
-
+DST_DIR = Path("src/main/resources/assets/minecraft/models/block")
 
 TMP_DIR.mkdir(parents=True, exist_ok=True)
 DST_DIR.mkdir(parents=True, exist_ok=True)
