@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/lunas_flower_patch_cross_3_c_sheared",
+  "parent": "minecraft:block/lunas_flower_patch_cross_3_c",
   "textures": {
     "particle": "minecraft:block/orange_tulip",
     "cross": "minecraft:block/orange_tulip_sheared"

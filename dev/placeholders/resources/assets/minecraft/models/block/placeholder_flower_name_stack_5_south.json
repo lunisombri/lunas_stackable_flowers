@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/lunas_flower_patch_cross_5_south",
-  "textures": {
-    "particle": "minecraft:block/placeholder_flower_name",
-    "cross": "minecraft:block/placeholder_flower_name"
-  }
-}

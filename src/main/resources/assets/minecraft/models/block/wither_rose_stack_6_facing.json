@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/lunas_flower_patch_cross_6_facing",
+  "textures": {
+    "particle": "minecraft:block/wither_rose",
+    "cross": "minecraft:block/wither_rose"
+  }
+}

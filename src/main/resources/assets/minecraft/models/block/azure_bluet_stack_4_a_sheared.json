@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/lunas_flower_patch_cross_4_a_sheared",
+  "parent": "minecraft:block/lunas_flower_patch_cross_4_a",
   "textures": {
     "particle": "minecraft:block/azure_bluet",
     "cross": "minecraft:block/azure_bluet_sheared"
