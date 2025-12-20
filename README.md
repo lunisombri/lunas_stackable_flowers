@@ -41,7 +41,7 @@ Designed to feel like it could have shipped with Minecraft:
 
 | Minecraft Version | Status         |
 |-------------------|----------------|
-| **1.21.11**       | 🛠 In Progress   |
+| **1.21.11**       | ✅ Supported    |
 | **1.20.10**       | ✅ Supported    |
 | Older versions    | ❌ Not supported |
 
