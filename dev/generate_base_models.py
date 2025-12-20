@@ -9,7 +9,6 @@ DST_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def rename_with_group_count(stem: str, new_count: int):
-    # replaces _<number>_ with the new group count
     parts = stem.split("_")
     for i, part in enumerate(parts):
         if part.isdigit():
