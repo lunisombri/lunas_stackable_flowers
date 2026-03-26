@@ -25,6 +25,7 @@ FLOWERS = [
     "wither_rose",
     "torchflower",
     "closed_eyeblossom",
+    "golden_dandelion",
 ]
 
 EMISSIVE_FLOWERS = [
