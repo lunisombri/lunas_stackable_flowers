@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/lunas_flower_patch_cross_3",
+  "textures": {
+    "particle": "minecraft:block/golden_dandelion",
+    "cross": "minecraft:block/golden_dandelion_sheared"
+  }
+}

@@ -20,7 +20,8 @@ public interface StackableFlower {
 
     Set<String> LUNAS_BONEMEAL_EXCEPTION_BLOCK_NAMES = Set.of(
             "block.minecraft.wither_rose",
-            "block.minecraft.torchflower"
+            "block.minecraft.torchflower",
+            "block.minecraft.golden_dandelion"
     );
 
     VoxelShape LUNAS_STACKED = Block.box(2.0, 0.0, 2.0, 14.0, 5.0, 14.0);
@@ -31,7 +32,7 @@ public interface StackableFlower {
     BooleanProperty LUNAS_IS_SHEARED = BooleanProperty.create("lunas_is_sheared");
 
     default boolean isBonemealException(BlockState blockState) {
-        return LUNAS_BONEMEAL_EXCEPTION_BLOCK_NAMES.contains(blockState.getBlock().getDescriptionId());
+        return !this.isSheared(blockState) && LUNAS_BONEMEAL_EXCEPTION_BLOCK_NAMES.contains(blockState.getBlock().getDescriptionId());
     }
 
     default boolean canStackMore(BlockState blockState) {
